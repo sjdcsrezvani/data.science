@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banglore Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>Area (Square meter)</h2>
+    <input class="area"  type="text" id="uiSqm" class="floatLabel" name="Squarem" value="70">
+    <h2>Age (year)</h2>
+    <input class="area"  type="text" id="uiyear" class="floatLabel" name="age" value="5">
+	<h2>rooms</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-rooms-1" name="uirooms" value="1"/>
+		<label for="radio-rooms-1">1</label>
+		<input type="radio" id="radio-rooms-2" name="uirooms" value="2" checked/>
+		<label for="radio-rooms-2">2</label>
+		<input type="radio" id="radio-rooms-3" name="uirooms" value="3"/>
+		<label for="radio-rooms-3">3</label>
+		<input type="radio" id="radio-rooms-4" name="uirooms" value="4"/>
+		<label for="radio-rooms-4">4</label>
+		<input type="radio" id="radio-rooms-5" name="uirooms" value="5"/>
+		<label for="radio-rooms-5">5</label>
+	</div>
+	</form>
+<form class="form">
+    <h2>elevator</h2>
+    <div class="switch-field">
+        <input type="radio" id="radio-elevator-0" name="unielevator" value="0" checked/>
+        <label for="radio-elevator-0">0</label>
+        <input type="radio" id="radio-elevator-1" name="unielevator" value="1"/>
+        <label for="radio-elevator-1">1</label>
+    </div>
+</form>
+<form class="form">
+    <h2>parking</h2>
+    <div class="switch-field">
+        <input type="radio" id="radio-parking-0" name="uniparking" value="0"checked/>
+        <label for="radio-parking-0">0</label>
+        <input type="radio" id="radio-parking-1" name="uniparking" value="1"/>
+        <label for="radio-parking-1">1</label>
+    </div>
+</form>
+<form class="form">
+    <h2>warehouse</h2>
+    <div class="switch-field">
+        <input type="radio" id="radio-warehouse-0" name="uniwarehouse" value="0" checked/>
+        <label for="radio-warehouse-0">0</label>
+        <input type="radio" id="radio-warehouse-1" name="uniwarehouse" value="1"/>
+        <label for="radio-warehouse-1">1</label>
+    </div>
+</form>
+<form class="form">
+		<h2>Location</h2>
+	<div>
+  <select class="location" name="" id="uilocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Electronic City</option>
+        <option>Rajaji Nagar</option>
+  </select>
+</div>
+	<button class="submit" onclick="onclickedestimateprice()" type="button">Estimate Price</button>
+	<div id="uiestimatedprice" class="result">	<h2></h2> </div>
+</form>
+</body>
+</html>
